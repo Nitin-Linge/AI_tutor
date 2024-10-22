@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: Ai_chatbot
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}  # Pass the API key from .env or the host
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
