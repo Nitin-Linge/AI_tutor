@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.env
+.venv/
+ENV/
+env/
+venv/
+
+# Docker
+*.dockerignore
+Dockerfile
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+*.out
+*.err
+
+# Uploaded books and data
+uploaded_books/
+chromadb/
+test_data/
+
+# Miscellaneous
+*.swp
